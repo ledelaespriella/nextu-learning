@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+*{
+    line-height: 2;
+}
+
+h1{
+    color: white;
+    font-size: 36px;
+    text-transform: capitalize;
+    background: darkblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1::after,
+h1::before{
+    content: "\2B50";
+}
+
+p:first-child,
+p:last-child{
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+}
+
+p:first-child::first-letter{
+    font-size: 40px;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    color: purple;
+}
+
+input,
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: purple;
+}
+
+input:focus{
+    background: purple;
+    color: white;
+}
+
+input:focus::placeholder{
+    color:white;
+}
+
+button{
+    border: none;
+    background: purple;
+    color: white;
+}
+
+button:hover{
+    background: orange;
+}
+
+h2:nth-child(2n){
+    color: purple ;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3:nth-of-type(2){
+    color: orange;
+}
